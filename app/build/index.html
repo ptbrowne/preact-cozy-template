@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Preact PWA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="manifest" href="/manifest.json">
+        
+            <meta name="theme-color" content="#673ab8">
+        
+        
+         
+            
+                
+            
+        
+         
+            
+                
+            
+        
+         
+            
+                
+            
+        
+         
+        {{.CozyClientJS}}
+        {{.CozyBar}}
+    <link rel="shortcut icon" href="http://0.0.0.0:3000/favicon.ico"></head>
+    <body
+      role="application"
+      data-cozy-token="{{.Token}}"
+      data-cozy-domain="{{.Domain}}"
+      data-cozy-locale="{{.Locale}}"
+      data-cozy-app-name="{{.AppName}}"
+      data-cozy-app-editor="{{.AppEditor}}"
+      data-cozy-icon-path="{{.IconPath}}"
+    >
+        
+        <script>window.fetch||document.write('<script src="http://0.0.0.0:3000/polyfills.js"><\/script>')</script>
+        <script src="http://0.0.0.0:3000/bundle.js"></script>
+    </body>
+</html>

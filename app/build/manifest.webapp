@@ -1,0 +1,75 @@
+{
+  "name": "Preact",
+  "slug": "Preact",
+  "icon": "icon.svg",
+  "description": "Manage and view your MAIF data easily",
+  "category": "partners",
+  "version": "1.0.0",
+  "licence": "AGPL-3.0",
+  "source": "https://github.com/labs/cozy-maif.git#build",
+  "developer": {
+    "name": "Cozy",
+    "url": "https://cozy.io"
+  },
+  "default_locale": "en",
+  "locales": {},
+  "routes": {
+    "/": {
+      "folder": "/",
+      "index": "index.html",
+      "public": false
+    }
+  },
+  "permissions": {
+    "apps": {
+      "description": "Required by the cozy-bar to display the icons of the apps",
+      "type": "io.cozy.apps",
+      "verbs": ["GET"]
+    },
+    "contracts": {
+      "description": "Accessing your MAIF contract",
+      "type": "fr.maif.maifuser.contrat",
+      "verbs": ["GET", "POST"]
+    },
+    "home": {
+      "description": "Accessing your MAIF home",
+      "type": "fr.maif.maifuser.home",
+      "verbs": ["GET", "POST"]
+    },
+    "foyer": {
+      "description": "Accessing your MAIF foyer",
+      "type": "fr.maif.maifuser.foyer",
+      "verbs": ["GET", "POST"]
+    },
+    "paymentterms": {
+      "description": "Accessing your MAIF payment terms",
+      "type": "fr.maif.maifuser.paymentterms",
+      "verbs": ["GET", "POST"]
+    },
+    "insuranceclaim": {
+      "description": "Required to display your MAIF insurance claims",
+      "type": "org.fing.mesinfos.insuranceclaim",
+      "verbs": ["GET", "POST"]
+    },
+    "settings": {
+      "description": "Required by the cozy-bar to know which applications are coming soon",
+      "type": "io.cozy.settings",
+      "verbs": ["GET"]
+    },
+    "societaires": {
+      "description": "Required to display your MAIF societaire info",
+      "type": "fr.maif.maifuser.societaire",
+      "verbs": ["GET", "POST"]
+    },
+    "sinistre": {
+      "description": "Accessing your MAIF insurance claims",
+      "type": "fr.maif.maifuser.sinistre",
+      "verbs": ["GET", "POST"]
+    },
+    "societaire": {
+      "description": "Accessing your MAIF societaire info",
+      "type": "fr.maif.maifuser.societaire",
+      "verbs": ["GET", "POST"]
+    }
+  }
+}

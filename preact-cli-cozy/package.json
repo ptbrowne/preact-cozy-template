@@ -1,0 +1,13 @@
+{
+  "name": "preact-cli-cozy",
+  "version": "1.0.0",
+  "description": "Plugin to add cozy",
+  "main": "index.js",
+  "repository": "https://github.com/cozy/preact-cli-cozy",
+  "author": "Patrick Browne",
+  "license": "MIT",
+  "dependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "webpack": "^3.5.5"
+  }
+}
